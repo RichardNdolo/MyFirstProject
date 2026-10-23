@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cstlib>
+#include <ctime>
+
+using namespace std;
+
+int main () {
+
+    srand( time(0));
+
+    Int dayuntilExpiration = rand() % 12;
+
+    cout << "Days until Expiration: " << dayuntilExpiration << endl
+
+    if (dayuntilExpiration == 0) {
+        cout << " your subscription has expired." << endl;
+    }
+    else if (dayuntilExpiration == 1) {
+        cout << "Your subscription expires within a day!" << endl;
+        cout << "Renew now and save 20% " <<endl;
+    }
+    return 0;
+}
